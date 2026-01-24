@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  background: #f5f3f0;
+  color: #222;
+}
+
+.app {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 32px 20px 40px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.hint {
+  margin: 0 0 24px;
+  color: #5a5a5a;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.metric {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.value {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #5a5a5a;
+  margin-bottom: 12px;
+}
+
+.meta label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  font: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.meta input[type="number"] {
+  width: 4ch;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #cfcac2;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: center;
+  appearance: textfield;
+}
+
+.meta input[type="number"]:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+  border-bottom-color: #2563eb;
+}
+
+button {
+  border: 1px solid #ccc;
+  background: #f0efe9;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e8e6df;
+}
+
+button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .meta {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
